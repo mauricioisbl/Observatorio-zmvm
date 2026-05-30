@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tlalpowa</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main class="app" data-build="2026-05-27 15:03:47">
+    <header class="toolbar">
+      <section class="tabs" aria-label="Pestañas">
+        <button class="tab active" type="button">Principal</button>
+        <button class="tab" type="button">Gráfica 1</button>
+        <button class="tab add" type="button" aria-label="Nueva gráfica">+</button>
+      </section>
+      <section class="commands" aria-label="Comandos">
+        <button class="command" type="button">Centrar mapa</button>
+        <button class="command" type="button">Exportar Datos</button>
+        <button class="command primary" type="button">Importar Datos</button>
+      </section>
+    </header>
+
+    <section class="workspace">
+      <section class="map" aria-label="Facsímil del mapa satelital">
+        <div class="metro-outline"></div>
+        <div class="pie p1"></div>
+        <div class="pie p2"></div>
+        <div class="pie p3"></div>
+        <div class="route r1"></div>
+        <div class="route r2"></div>
+        <div class="label">Zona Metropolitana del Valle de México</div>
+        <div class="scale">5 km</div>
+      </section>
+      <aside class="panel" aria-label="Panel lateral de datos">
+        <p class="muted">Datos epidemiológicos cargados de la actualidad hacia el pasado</p>
+        <h1>Tlalpowa</h1>
+        <p>Semana 2026-17</p>
+        <p>Casos filtrados: 42251</p>
+        <input class="search" value="buscar datos" aria-label="buscar datos" readonly>
+        <section class="tree open">
+          <div class="tree-row level-0"><b>▼</b><i class="check mixed"></i><strong>Datos epidemiológicos</strong></div>
+          <div class="tree-row level-1"><b>▾</b><i class="check mixed"></i><strong>Accidentes y lesiones (17)</strong></div>
+          <div class="tree-row level-2"><i class="check on"></i><span>Accidentes de transporte en vehículos</span></div>
+          <div class="tree-row level-2"><i class="check on"></i><span>Contacto traumático con avispas</span></div>
+          <div class="tree-row level-2"><i class="check on"></i><span>Herida por arma de fuego y punzocortante</span></div>
+          <div class="tree-row level-2"><i class="check on"></i><span>Mordedura por serpiente</span></div>
+          <div class="tree-row level-2"><i class="check on"></i><span>Mordeduras por perro</span></div>
+          <div class="tree-row level-2"><i class="check on"></i><span>Quemaduras</span></div>
+          <div class="tree-row level-2"><i class="check on"></i><span>Violencia intrafamiliar</span></div>
+        </section>
+        <section class="tree muted-tree">
+          <div class="tree-row level-0"><b>▶</b><i class="check off"></i><strong>Datos atmosféricos</strong></div>
+          <div class="tree-row level-0"><b>▶</b><i class="check off"></i><strong>Datos demográficos</strong></div>
+          <div class="tree-row level-0"><b>▶</b><i class="check off"></i><strong>Datos de Transporte y Movilidad</strong></div>
+        </section>
+      </aside>
+    </section>
+
+    <footer class="timeline">
+      <button>- día</button><button>hoy</button><button>+ día</button>
+      <div class="date"><span>2026-05-27 15:03:47</span><button class="date-play">›</button></div>
+      <div class="axis"><i style="left:19%"></i><i style="left:25%"></i><i style="left:41%"></i><i style="left:50%"></i><i style="left:86%"></i><b style="left:50%"></b></div>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

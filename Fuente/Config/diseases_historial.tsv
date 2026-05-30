@@ -1,0 +1,122 @@
+﻿# id	canonical	group	cie10_pipe	aliases_pipe
+parotiditis_infecciosa	Parotiditis infecciosa	prevenibles_vacunacion		Parotiditis infecciosa
+tos_ferina	Tos ferina	prevenibles_vacunacion		Tos ferina
+varicela	Varicela	prevenibles_vacunacion		Varicela
+absceso_hepatico_amebiano	Absceso hepático amebiano	digestivas		Absceso hepático amebiano
+amebiasis_intestinal	Amebiasis intestinal	digestivas		Amebiasis intestinal
+ascariasis	Ascariasis	digestivas		Ascariasis
+enterobiasis	Enterobiasis	digestivas		Enterobiasis
+fiebre_tifoidea	Fiebre tifoidea	digestivas		Fiebre tifoidea
+giardiasis	Giardiasis	digestivas		Giardiasis
+infecciones_intestinales_mal_definidas	Infecciones intestinales por otros organismos y las mal definidas	digestivas		Infecciones intestinales por otros organismos y las mal definidas|Infecciones intestinales
+intoxicacion_alimentaria_bacteriana	Intoxicación alimentaria bacteriana	digestivas	A05	Intoxicación alimentaria bacteriana|Intoxicacion alimentaria bacteriana|por Intoxicación alimentaria mal bacteriana|Intoxicación alimentaria mal bacteriana
+otras_helmintiasis	Otras helmintiasis	digestivas		Otras helmintiasis
+otras_infecciones_intestinales_protozoarios	Otras infecciones intestinales debidas a protozoarios	digestivas		Otras infecciones intestinales debidas a protozoarios
+otras_salmonelosis	Otras Salmonelosis	digestivas		Otras Salmonelosis
+shigelosis	Shigelosis	digestivas		Shigelosis
+faringitis_amigdalitis_estreptococicas	Faringitis y amigdalitis estreptocócicas	respiratorias		Faringitis y amigdalitis estreptocócicas|Faringitis y amigdalitis estreptococicas
+otitis_media_aguda	Otitis media aguda	respiratorias		Otitis media aguda
+tuberculosis_respiratoria	Tuberculosis respiratoria	respiratorias		Tuberculosis respiratoria
+tumor_maligno_cuello_utero	Tumor maligno del cuello del útero	no_transmisibles	C53	Tumor maligno del cuello del utero|Tumor maligno del cuello del útero|Displasias y neoplasias|Neoplasias
+candidiasis_urogenital	Candidiasis urogenital	transmision_sexual		Candidiasis urogenital
+chancro_blando	Chancro blando	transmision_sexual		Chancro blando
+herpes_genital	Herpes genital	transmision_sexual		Herpes genital
+infeccion_asintomatica_vih	Infección asintomática por VIH	transmision_sexual		Infección asintomática por VIH|Infeccion asintomatica por VIH
+infeccion_gonococica_genitourinaria	Infección gonocócica del tracto genitourinario	transmision_sexual		Infección gonocócica del tracto genitourinario|Infeccion gonococica
+linfogranuloma_venereo_clamidias	Linfogranuloma venéreo por clamidias	transmision_sexual		Linfogranuloma venéreo por clamidias|Linfogranuloma venereo
+sifilis_adquirida	Sífilis adquirida	transmision_sexual		Sífilis adquirida|Sifilis adquirida
+sifilis_congenita	Sífilis congénita	transmision_sexual		Sífilis congénita|Sifilis congenita
+sida	Síndrome de inmunodeficiencia adquirida	transmision_sexual		Síndrome de inmunodeficiencia adquirida|SIDA
+tricomoniasis_urogenital	Tricomoniasis urogenital	transmision_sexual		Tricomoniasis urogenital
+vulvovaginitis_aguda	Vulvovaginitis Aguda	transmision_sexual		Vulvovaginitis Aguda
+dengue_signos_alarma	Dengue con Signos de Alarma	vectores		Dengue con Signos de Alarma
+dengue_grave	Dengue grave	vectores	A91	Dengue grave
+dengue_no_grave	Dengue no grave	vectores	A90	Dengue no grave
+chikungunya	Enfermedad por Virus Chikungunya	vectores		Enfermedad por Virus Chikungunya|Chikungunya
+fiebre_oeste_nilo	Fiebre del Oeste del Nilo	vectores		Fiebre del Oeste del Nilo
+fiebre_manchada	Fiebre manchada	vectores		Fiebre manchada
+zika	Infección por virus Zika	vectores		Infección por virus Zika|Zika
+otras_rickettsiosis	Otras Rickettsiosis	vectores		Otras Rickettsiosis
+paludismo_falciparum	Paludismo por plasmodium falciparum	vectores		Paludismo por plasmodium falciparum
+paludismo_vivax	Paludismo por plasmodium vivax	vectores		Paludismo por plasmodium vivax
+tifo_epidemico	Tifo epidémico	vectores		Tifo epidémico|Tifo epidemico
+tifo_murino	Tifo murino	vectores		Tifo murino
+brucelosis	Brucelosis	zoonosis		Brucelosis
+cisticercosis	Cisticercosis	zoonosis		Cisticercosis
+leptospirosis	Leptospirosis	zoonosis		Leptospirosis
+rabia_humana	Rabia humana	zoonosis		Rabia humana
+teniasis	Teniasis	zoonosis		Teniasis
+triquinosis	Triquinosis	zoonosis		Triquinosis
+erisipela	Erisipela	otras_enfermedades_exantematicas		Erisipela
+escarlatina	Escarlatina	otras_enfermedades_exantematicas		Escarlatina
+conjuntivitis	Conjuntivitis	otras_enfermedades_transmisibles		Conjuntivitis
+conjuntivitis_epidemica_hemorragica	Conjuntivitis epidémica aguda hemorrágica	otras_enfermedades_transmisibles		Conjuntivitis epidémica aguda hemorrágica
+escabiosis	Escabiosis	otras_enfermedades_transmisibles		Escabiosis
+hepatitis_c	Hepatitis vírica C	otras_enfermedades_transmisibles	B17.1|B18.2	Hepatitis vírica C|Hepatitis virica C|Hepatitis C|Hepatitis viral C
+otras_hepatitis_viricas	Hepatitis víricas, otras	otras_enfermedades_transmisibles	B17-B19	Hepatitis víricas, otras|Hepatitis viricas otras|Hepatitis viricas, otras|Otras hepatitis víricas|Otras hepatitis viricas
+infeccion_asociada_atencion_salud	Infección asociada por atención a la salud	otras_enfermedades_transmisibles	Y95	Infección asociada por atención a la salud|Infeccion asociada por atencion a la salud|Infección asociada a la atención de la salud|Infeccion asociada a la atencion de la salud|Infección asociada por atención de la salud|Infeccion asociada por atencion de la salud|Infección asociada a la atención de la salud (S/C)|Infeccion asociada a la atencion de la salud S/C
+mal_del_pinto	Mal del pinto	otras_enfermedades_transmisibles		Mal del pinto
+meningoencefalitis_amebiana_primaria	Meningoencefalitis amebiana primaria	otras_enfermedades_transmisibles		Meningoencefalitis amebiana primaria
+tripanosomiasis_americana	Tripanosomiasis Americana	otras_enfermedades_transmisibles		Tripanosomiasis Americana
+enfermedad_febril_exantematica	Enfermedad febril exantemática	enfermedades_bajo_vigilancia_sindromatica		Enfermedad febril exantemática
+infeccion_vias_urinarias	Infección de vías urinarias	enfermedades_bajo_vigilancia_sindromatica		Infección de vías urinarias
+paralisis_flacida_aguda	Parálisis flácida aguda	enfermedades_bajo_vigilancia_sindromatica		Parálisis flácida aguda
+sindrome_coqueluchoide	Síndrome coqueluchoide	enfermedades_bajo_vigilancia_sindromatica		Síndrome coqueluchoide
+sindrome_meningeo	Síndrome meníngeo	enfermedades_bajo_vigilancia_sindromatica		Síndrome meníngeo
+bocio_endemico	Bocio endémico	no_transmisibles		Bocio endémico
+cirrosis_hepatica_alcoholica	Cirrosis Hepática alcohólica	no_transmisibles		Cirrosis Hepática alcohólica
+diabetes_tipo_1	Diabetes mellitus insulinodependiente (Tipo I)	no_transmisibles		Diabetes mellitus insulinodependiente|Tipo I
+diabetes_gestacional	Diabetes mellitus que se origina con el embarazo	no_transmisibles		Diabetes mellitus que se origina con el embarazo
+hipertensivos_embarazo	Edema, proteinuria y trastornos hipertensivos del embarazo	no_transmisibles	O10-O16	Edema, proteinuria y transtornos hipertensivos del embarazo|Edema, proteinuria y trastornos hipertensivos del embarazo|Edema proteinuria y se transtornos hipertensivos del Efectos embarazo|Trastornos hipertensivos del embarazo
+enfermedad_alcoholica_higado	Enfermedad alcohólica del hígado	no_transmisibles		Enfermedad alcohólica del hígado
+enfermedad_cerebrovascular	Enfermedad cerebrovascular	no_transmisibles		Enfermedad cerebrovascular
+enfermedad_isquemica_corazon	Enfermedad isquémica del corazón	no_transmisibles		Enfermedad isquémica del corazón
+esavi	Eventos supuestamente asociados a la vacunación (ESAVI)	prevenibles_vacunacion	Y58|Y59	Eventos supuestamente asociados a la vacunación|ESAVI
+fiebre_reumatica_aguda	Fiebre reumática aguda	no_transmisibles		Fiebre reumática aguda
+gingivitis_periodontales	Gingivitis y enfermedades periodontales	no_transmisibles		Gingivitis y enfermedades periodontales
+hiperplasia_prostata	Hiperplasia de la Próstata	no_transmisibles		Hiperplasia de la Próstata|Hiperplasia de la Prostata
+hipotermia	Hipotermia	no_transmisibles		Hipotermia
+insuficiencia_venosa_periferica	Insuficiencia venosa periférica	no_transmisibles		Insuficiencia venosa periférica
+intoxicacion_alcohol	Intoxicación aguda por alcohol	no_transmisibles		Intoxicación aguda por alcohol
+intoxicacion_monoxido_carbono	Intoxicación por Monóxido de Carbono	no_transmisibles		Intoxicación por Monóxido de Carbono
+intoxicacion_picadura_alacran	Intoxicación por picadura de alacrán	no_transmisibles		Intoxicación por picadura de alacrán
+intoxicacion_plaguicidas	Intoxicación por plaguicidas	no_transmisibles		Intoxicación por plaguicidas
+intoxicacion_ponzona_animales	Intoxicación por ponzoña de animales	no_transmisibles		Intoxicación por ponzoña de animales
+anorexia_bulimia	Anorexia y Bulimia	nutricion		Anorexia y Bulimia
+desnutricion_leve	Desnutrición leve	nutricion		Desnutrición leve
+desnutricion_moderada	Desnutrición moderada	nutricion		Desnutrición moderada
+obesidad	Obesidad	nutricion		Obesidad
+depresion	Depresión	neurologicas_salud_mental		Depresión
+alzheimer	Enfermedad de Alzheimer	neurologicas_salud_mental		Enfermedad de Alzheimer
+parkinson	Enfermedad de Parkinson	neurologicas_salud_mental		Enfermedad de Parkinson
+accidentes_transporte_motor	Accidentes de transporte en vehículos con motor	accidentes	V01-V99	Accidentes de transporte en vehículos con motor|Accidentes de transporte en vehiculos|Accidentes de transporte en vehí.|Accidentes de transporte en Herida vehículos con motor|vehículos con motor V20-V29 V40-V79
+herida_arma_fuego_punzocortantes	Herida por Arma de Fuego y Punzocortantes	accidentes	W32-W34|X93-X95|X99	Herida por Arma de Fuego y Punzocortantes|Herida por arma de fuego y punzoc.|Herida por arma de fuego y punzocortante|Herida por arma de fuego y punzocortantes
+mordedura_serpiente	Mordedura por serpiente	accidentes	X20|W59	Mordedura por serpiente|Mordeduras por serpiente
+mordeduras_otros_mamiferos	Mordeduras por otros mamíferos	accidentes	W55	Mordeduras por otros mamíferos|Mordeduras por otros mamiferos|Mordeduras otros mamiferos
+mordeduras_perro	Mordeduras por perro	accidentes	W54	Mordeduras por perro|Mordedura por perro|Mordeduras perro
+violencia_intrafamiliar	Violencia intrafamiliar	accidentes		Violencia intrafamiliar
+quemaduras	Quemaduras	accidentes	T20-T32	Quemaduras
+ulceras_gastritis_duodenitis	Úlceras, gastritis y duodenitis	no_transmisibles	K25-K29	Úlceras, gastritis y duodenitis|Ulceras gastritis y duodenitis|Gastritis y duodenitis
+anencefalia	Anencefalia	defectos_nacer	Q00	Anencefalia
+encefalocele	Encefalocele	defectos_nacer	Q01	Encefalocele
+espina_bifida	Espina bífida	defectos_nacer	Q05	Espina bífida|Espina bifida
+labio_paladar_hendido	Labio y paladar hendido	defectos_nacer	Q35-Q37	Labio y paladar hendido
+microcefalia	Microcefalia	defectos_nacer	Q02	Microcefalia
+
+# Reglas añadidas para evitar auto-clasificación truncada en boletines históricos CDMX.
+colera	Cólera	digestivas	A00	Cólera|Colera
+desnutricion_severa	Desnutrición severa	nutricion	E40-E43	Desnutrición severa|Desnutricion severa
+rubeola	Rubéola	prevenibles_vacunacion	B06	Rubéola|Rubeola
+sindrome_rubeola_congenita	Síndrome de rubéola congénita	prevenibles_vacunacion	P35.0	Síndrome de rubéola congénita|Sindrome de rubeola congenita
+tetanos	Tétanos	prevenibles_vacunacion	A34|A35	Tétanos|Tetanos
+tetanos_neonatal	Tétanos neonatal	prevenibles_vacunacion	A33	Tétanos neonatal|Tetanos neonatal
+lepra	Lepra	otras_enfermedades_transmisibles	A30	Lepra
+tracoma	Tracoma	otras_enfermedades_transmisibles	A71	Tracoma
+leishmaniasis	Leishmaniasis	vectores	B55	Leishmaniasis
+leishmaniasis_cutanea	Leishmaniasis cutánea	vectores	B55.1	Leishmaniasis cutánea|Leishmaniasis Cutanea
+leishmaniasis_visceral	Leishmaniasis visceral	vectores	B55.0	Leishmaniasis visceral
+oncocercosis	Oncocercosis	vectores	B73	Oncocercosis
+contacto_avispas_abejas	Contacto traumático con avispas, avispones y abejas	accidentes	X23	Contacto traumático con avispas, avispones y abejas|Contacto Traumático con Avispas Avispones y Abejas|Contacto traumático con avispas,.|Avispas avispones y abejas
+displasia_cervical_leve_moderada	Displasia cervical leve y moderada	no_transmisibles	N87.0-N87.1	Displasia cervical leve y moderada
+tumor_maligno_mama	Tumor maligno de mama	no_transmisibles	C50	Tumor maligno de mama|y Tumor maligno de mama
+peaton_lesionado_accidente_transporte	Peatón lesionado en accidente de transporte	accidentes	V01-V09|Y07.0-Y07.2	Peatón lesionado en accidente de transporte|Peaton lesionado en accidente de transporte

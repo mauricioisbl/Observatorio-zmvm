@@ -1,0 +1,54 @@
+# id	nombre	grupo	unidad	aliases
+o3	Ozono	contaminante_criterio	ppb	O3|Ozono|Columna O3|TROPOMI O3
+pm10	Particulas PM10	contaminante_criterio	ug/m3	PM10|Particulas menores a 10 micrometros
+pm25	Particulas PM2.5	contaminante_criterio	ug/m3	PM2.5|PM25|Particulas menores a 2.5 micrometros|PM2_5
+pmco	Particulas gruesas PM10-2.5	contaminante_criterio	ug/m3	PMCO|PM10-2.5|Fraccion gruesa
+co	Monoxido de carbono	contaminante_criterio	ppm	CO|Monoxido de carbono|Columna CO|TROPOMI CO
+no2	Dioxido de nitrogeno	contaminante_criterio	ppb	NO2|Dioxido de nitrogeno|Columna NO2|TROPOMI NO2
+so2	Dioxido de azufre	contaminante_criterio	ppb	SO2|Dioxido de azufre|Columna SO2|TROPOMI SO2
+no	Oxido nitrico	gas_traza	ppb	NO|Oxido nitrico
+nox	Oxidos de nitrogeno	gas_traza	ppb	NOX|NOx|Oxidos de nitrogeno
+hcho	Formaldehido	gas_traza	mol/m2	HCHO|Formaldehido|Formaldehyde|TROPOMI HCHO
+nh3	Amoniaco	gas_traza	ppb	NH3|Amoniaco|Ammonia
+h2s	Sulfuro de hidrogeno	gas_traza	ppb	H2S|Sulfuro de hidrogeno
+ben	Benceno	cov	ppb	BENCENO|BEN|Benzene
+tol	Tolueno	cov	ppb	TOLUENO|TOL|Toluene
+xyl	Xilenos	cov	ppb	XYL|Xileno|Xilenos|Xylene
+ch4	Metano	gas_efecto_invernadero	ppb	CH4|Metano|Methane
+co2	Dioxido de carbono	gas_efecto_invernadero	ppm	CO2|Dioxido de carbono|Carbon dioxide
+bc	Carbono negro	aerosoles	ug/m3	BC|Black carbon|Carbono negro
+ec	Carbono elemental	aerosoles	ug/m3	EC|Elemental carbon|Carbono elemental
+oc	Carbono organico	aerosoles	ug/m3	OC|Organic carbon|Carbono organico
+aod	Profundidad optica de aerosoles	aerosoles	1	AOD|MAIAC AOD|Aerosol Optical Depth|Optical depth
+uvai	Indice UV de aerosoles	aerosoles	1	UVAI|Aerosol Index|Indice de aerosoles
+so4	Sulfato en aerosol	aerosoles	ug/m3	SO4|Sulfate aerosol|Sulfato
+no3a	Nitrato en aerosol	aerosoles	ug/m3	NO3 aerosol|Nitrate aerosol|Nitrato aerosol
+pb	Plomo particulado	metales	ng/m3	Pb|Plomo|Lead
+cd	Cadmio particulado	metales	ng/m3	Cd|Cadmio|Cadmium
+as	Arsenico particulado	metales	ng/m3	As|Arsenico|Arsenic
+ni	Niquel particulado	metales	ng/m3	Ni|Niquel|Nickel
+hg	Mercurio	metales	ng/m3	Hg|Mercurio|Mercury
+cr	Cromo particulado	metales	ng/m3	Cr|Cromo|Chromium
+tmp	Temperatura ambiente	meteorologico	C	TMP|Temperatura|Temperatura ambiente|T2M|2m temperature
+tmax	Temperatura maxima	meteorologico	C	TMAX|Temperatura maxima
+tmin	Temperatura minima	meteorologico	C	TMIN|Temperatura minima
+rh	Humedad relativa	meteorologico	%	RH|Humedad relativa|Relative humidity
+wsp	Velocidad del viento	meteorologico	m/s	WSP|Velocidad del viento|Wind speed
+wdr	Direccion del viento	meteorologico	grados	WDR|Direccion del viento|Direccion de viento
+u10	Componente zonal del viento	meteorologico	m/s	U10|10m u wind|Viento zonal
+v10	Componente meridional del viento	meteorologico	m/s	V10|10m v wind|Viento meridional
+pa	Presion atmosferica	meteorologico	hPa	PA|Presion atmosferica|Surface pressure
+pp	Precipitacion	meteorologico	mm	PP|Precipitacion|Rainfall|Total precipitation
+pblh	Altura de capa limite	meteorologico	m	PBLH|Boundary layer height|Capa limite|Planetary boundary layer height
+gr	Radiacion global	radiacion	W/m2	GR|Radiacion global|Surface solar radiation
+uva	Radiacion UV-A	radiacion	mW/cm2	UVA|Radiacion UV-A
+uvb	Radiacion UV-B	radiacion	W/m2	UVB|Radiacion UV-B
+uv	Indice UV	radiacion	1	UV|Indice UV|UV index
+lst	Temperatura superficial	superficie	C	LST|Land surface temperature|Temperatura superficial
+ndvi	Indice de vegetacion NDVI	superficie	1	NDVI|Normalized Difference Vegetation Index
+evi	Indice de vegetacion EVI	superficie	1	EVI|Enhanced Vegetation Index
+albedo	Albedo superficial	superficie	1	ALBEDO|Albedo
+soil_moisture	Humedad de suelo	superficie	m3/m3	Soil moisture|Humedad de suelo
+
+frp	Potencia radiativa del fuego	focos_calor	MW	FRP|Fire radiative power|Potencia radiativa del fuego
+brightness	Temperatura de brillo satelital	focos_calor	K	Brightness|Bright_T31|Bright TI4|Bright TI5|Temperatura de brillo

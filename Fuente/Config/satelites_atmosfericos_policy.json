@@ -1,0 +1,66 @@
+{
+  "schema": "tlalpowa.atmosfera.satelital.importacion.v2",
+  "proposito": "Preparar una importacion satelital independiente de RAMA/SIMAT en crudo, pero integrada dentro del IXIPTLAH mensual unico de cada mes.",
+  "almacenamiento": {
+    "crudo": "Datos externos/Satelitales/<producto>",
+    "ixiptlah_mensual": "Datos/AAAA_MM.ixiptlah::nucleo_satelital",
+    "ruta_ixiptlah_prohibida": "Datos/Satelitales",
+    "contrato": "IXIPTLAH es mensual y contiene todos los nucleos de informacion de ese mes. La importacion satelital no crea una raiz IXIPTLAH aparte; agrega registros atmosfera_satelital_fuente al archivo mensual existente o lo crea si no existe."
+  },
+  "independencia_de_linhaje": "Los productos satelitales se descargan e inventarian sin mezclarse con estaciones RAMA/SIMAT. La calibracion contra estaciones debe ser una etapa analitica posterior, reproducible y con incertidumbre, no una sobrescritura del dato puntual.",
+  "modo_inicial": {
+    "tipo": "inventario_rapido_sin_decodificacion_pesada",
+    "razon": "NetCDF, HDF-EOS, GeoTIFF y GRIB pueden ser grandes y multidimensionales; abrirlos como tablas bloquearia la UI y produciria interpretaciones falsas.",
+    "salida": "manifiesto mensual por archivo, proveedor, variable sugerida, formato, fecha inferida, tamano, firma temporal y ruta cruda"
+  },
+  "formatos_soportados_para_catalogo": [
+    "CSV",
+    "TXT",
+    "JSON",
+    "JSONL",
+    "GeoJSON",
+    "NetCDF",
+    "NetCDF-4",
+    "NetCDF-CF",
+    "HDF",
+    "HDF5",
+    "HDF-EOS",
+    "HDF-EOS5",
+    "HE5",
+    "GeoTIFF",
+    "COG",
+    "GRIB",
+    "GRIB2"
+  ],
+  "productos_iniciales": [
+    {
+      "id": "Sentinel5P_TROPOMI",
+      "satellite": "Sentinel-5P",
+      "sensor": "TROPOMI",
+      "variables": ["O3", "NO2", "SO2", "CO", "HCHO", "CH4", "indice_aerosol", "nubes_auxiliares"],
+      "formatos_esperados": ["NetCDF-CF", "NetCDF-4", "CSV/JSON de catalogo"]
+    },
+    {
+      "id": "NASA_Aura_OMI",
+      "satellite": "Aura",
+      "sensor": "OMI",
+      "variables": ["NO2", "ozono", "aerosoles", "parametros_de_nubes"],
+      "formatos_esperados": ["HDF-EOS5", "HDF-EOS", "JSON de catalogo"]
+    },
+    {
+      "id": "MODIS_MAIAC_AOD",
+      "satellite": "Terra/Aqua",
+      "sensor": "MODIS MAIAC",
+      "variables": ["AOD", "aerosoles", "contexto para PM2.5/PM10 calibrado localmente"],
+      "formatos_esperados": ["HDF", "HDF5", "GeoTIFF derivado", "JSON de catalogo"]
+    },
+    {
+      "id": "GOESR_ABI_Atmosfera",
+      "satellite": "GOES-R",
+      "sensor": "ABI",
+      "variables": ["nubes", "aerosoles auxiliares", "contexto radiativo"],
+      "formatos_esperados": ["NetCDF", "GeoTIFF derivado", "JSON de catalogo"]
+    }
+  ],
+  "regla_de_no_regresion": "Nunca mover el IXIPTLAH satelital a Datos/Satelitales. Solo el crudo vive en Datos externos/Satelitales; todo indice mensual vive dentro del AAAA_MM.ixiptlah correspondiente."
+}

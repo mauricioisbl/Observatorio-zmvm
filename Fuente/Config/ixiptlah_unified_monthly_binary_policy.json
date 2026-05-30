@@ -1,0 +1,32 @@
+{
+  "schema": "tlalpowa.ixiptlah_unified_monthly_binary_policy.v2",
+  "canonical_path": "Datos/{AAAA}_{MM}.ixiptlah",
+  "goal": "un archivo binario mensual autosuficiente que contenga epidemiologia, atmosfera, contaminantes y agregados de render sin subcarpetas por dominio",
+  "format": {
+    "magic": "IXIPTLAH",
+    "current_version": 3,
+    "legacy_read_versions": [2],
+    "record_header_v3": ["uint32 type", "uint32 schema", "uint64 stored_size", "uint64 raw_size", "uint32 codec", "uint32 reserved"],
+    "codec_0": "raw exact bytes",
+    "codec_1": "IX-LZ lossless embedded LZSS; only used when the stored payload is smaller than the raw payload",
+    "minimum_compression_payload_bytes": 48,
+    "minimum_compression_savings_bytes": 8
+  },
+  "reader_acceleration": {
+    "strategy": "volatile in-process header index keyed by path, file_size and mtime",
+    "stored_index_location": "memory only; no sidecar and no subfolder",
+    "index_fields": ["record_type", "schema", "payload_offset", "stored_size", "raw_size", "codec"],
+    "first_open": "scan fixed headers and seek over payloads without decompression",
+    "subsequent_opens": "seek directly to accepted payload offsets while file size and mtime remain unchanged",
+    "reason": "one monthly mixed shard must not force epidemiology readers to inflate atmosphere payloads or map readers to inflate epidemiology payloads"
+  },
+  "non_negotiable_data_rule": "las cifras de datos no se redondean ni se reescalan por el contenedor; la compresion actua sobre bytes serializados y la descompresion reproduce exactamente el payload crudo",
+  "render_rule": "la interfaz debe leer primero registros AtmosphereRenderSummary y saltar con indice/seekg todo payload de tipos no solicitados",
+  "migration": {
+    "new_writes": "Datos/AAAA_MM.ixiptlah",
+    "legacy_reads": ["Datos/Atmosfericos", "Datos/Atmosfericos/RAMA_Meteorologicos", "Datos/Atmosfericos/RAMA_Contaminantes"],
+    "legacy_write_escape_hatch": "TLALPOWA_IXIPTLAH_LEGACY_SUBROOTS=1",
+    "legacy_format_escape_hatch": "TLALPOWA_IXIPTLAH_FORCE_V2=1"
+  },
+  "performance_principle": "un shard mensual reduce aperturas de archivos, enumeraciones de directorios y parsing cruzado; el tipo del registro sustituye la carpeta como particion logica y el indice de encabezados sustituye la descompresion ciega"
+}

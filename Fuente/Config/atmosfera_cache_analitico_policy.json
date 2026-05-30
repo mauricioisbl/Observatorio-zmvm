@@ -1,0 +1,44 @@
+{
+  "schema": "tlalpowa.atmosfera_cache_analitico.v2",
+  "purpose": "Define caches analiticos persistentes en Datos/Atmosfera/cache_analitico para que las graficas no recalculen campos espaciales atmosfericos ya estabilizados.",
+  "current_enabled_products": [
+    {
+      "factor_id": "o3",
+      "source_family": "RAMA CSV horario",
+      "spatial_method": "rama_hourly_station_area_triangulated_v2",
+      "temporal_base": "horario_a_diario_y_semana_epidemiologica",
+      "spatial_unit": "alcaldia_municipio",
+      "cache_file": "Datos/Atmosfera/cache_analitico/o3_alcaldia_diario_triangulado_{decada}.tsv",
+      "validation": "La firma de cohorte usa archivos RAMA por anio, geometria de estaciones y geometria territorial; cada celda diaria proviene de triangulacion horaria con estaciones O3 validas, muestreo dentro del poligono de la alcaldia/municipio y agregacion diaria antes de compararse por semana epidemiologica."
+    }
+  ],
+  "future_reserved_products": [
+    {
+      "factor_id": "sentinel_5p_o3",
+      "status": "reservado_no_aplicado",
+      "expected_spatial_unit": "alcaldia_municipio",
+      "expected_temporal_base": "diario_o_subdiario",
+      "notes": "Puede incorporarse como nuevo metodo/firma sin sustituir el cache RAMA existente."
+    },
+    {
+      "factor_id": "nubosidad_satelital",
+      "status": "reservado_no_aplicado",
+      "expected_spatial_unit": "alcaldia_municipio",
+      "expected_temporal_base": "horario_o_diario",
+      "notes": "Debe agregarse como factor independiente para permitir graficas multivariables sin invalidar O3."
+    },
+    {
+      "factor_id": "otros_contaminantes",
+      "status": "reservado_no_aplicado",
+      "expected_spatial_unit": "alcaldia_municipio",
+      "expected_temporal_base": "horario_diario_semanal",
+      "notes": "La clave de cache debe incluir factor, metodo espacial, firma de fuente y firma geometrica."
+    }
+  ],
+  "non_regression_rules": [
+    "Ninguna capa futura debe borrar ni reinterpretar un cache previo: debe generar una firma nueva.",
+    "La UI debe preferir lecturas cacheadas y solo calcular celdas faltantes o con firma de cohorte nueva.",
+    "Los productos atmosfericos agregados deben permanecer en Datos para exportacion y reutilizacion de graficas.",
+    "Los cache voluminosos deben particionarse por decada cuando superen productos anuales."
+  ]
+}

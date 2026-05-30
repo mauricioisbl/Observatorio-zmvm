@@ -1,0 +1,132 @@
+
+
+/*
+ * Archivo: app_icon.rc
+ * Papel técnico: recurso Windows del ejecutable: manifiesto de icono y metadatos binarios que enlaza el .ico con Tlalpowa.exe.
+ * Comentario de mantenimiento: este bloque fue reconstruido desde cero para documentar el comportamiento vigente sin arrastrar notas obsoletas de iteraciones previas. La intención es que cada lectura futura distinga con claridad entre contratos de datos, puntos de extensión, supuestos de rendimiento, rutas de E/S y límites que no deben fusionarse por conveniencia.
+ * Regla de no regresión: los comentarios describen invariantes y responsabilidades, pero no introducen lógica; cualquier cambio funcional debe ser deliberado, probado y separado de la documentación.
+ */
+#include <windows.h>
+#pragma code_page(65001)
+
+#define IDI_APP_ICON 101
+
+IDI_APP_ICON ICON "..\\Tlalpowa.ico"
+
+VS_VERSION_INFO VERSIONINFO
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+ FILEFLAGS 0x1L
+#else
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+ FILEFLAGS 0x0L
+#endif
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+/*
+ * TLALPOWA_COMENTARIO_TECNICO_V3 · invariante técnico distribuido · app_icon.rc:50 · bloque 1
+ * Este tramo pertenece a módulo auxiliar de Tlalpowa con responsabilidad acotada dentro del flujo de datos y visualización; su lectura correcta exige distinguir dato crudo, dato normalizado, estado gráfico, caché transitoria y persistencia oficial.
+ * La regla de mantenimiento es conservar fronteras semánticas: leer no es aceptar, aceptar no es publicar, publicar no es renderizar, y renderizar no debe retroalimentar la verdad persistida.
+ * Cuando el flujo toque importación, el resultado estable debe terminar en IXIPTLAH mensual centralizado; cualquier archivo auxiliar debe considerarse caché, bitácora o staging, nunca fuente canónica paralela.
+ * Los comentarios aquí no sustituyen validación en tiempo de ejecución: documentan por qué la estructura cercana no debe simplificarse eliminando controles de tamaño, esquema, fecha, tipo, índice o atomicidad.
+ * Al refactorizar, preservar la capacidad de degradar localmente, reportar causa, continuar con datos sanos y no contaminar otros núcleos internos del mes.
+ */
+ FILEOS 0x40004L
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+ FILETYPE 0x1L
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+ FILESUBTYPE 0x0L
+BEGIN
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+    BLOCK "StringFileInfo"
+    BEGIN
+/*
+ * Punto de mantenimiento fino: el bloque inmediato participa en una cadena mayor de estado y por ello debe modificarse entendiendo qué datos recibe ya normalizados y qué datos todavía son provisionales.
+ * La regla práctica es no desplazar validación, conversión ni efectos laterales a otra capa para “simplificar” este tramo; esa simplificación suele crear acoplamientos invisibles.
+ * Contexto técnico local: el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución.
+ */
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Tlalpowa"
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+            VALUE "FileDescription", "Tlalpowa"
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+            VALUE "FileVersion", "1.0.0"
+            VALUE "InternalName", "Tlalpowa"
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+            VALUE "OriginalFilename", "Tlalpowa.exe"
+            VALUE "ProductName", "Tlalpowa"
+/*
+ * TLALPOWA_COMENTARIO_TECNICO_V3 · invariante técnico distribuido · app_icon.rc:99 · bloque 2
+ * Este tramo pertenece a módulo auxiliar de Tlalpowa con responsabilidad acotada dentro del flujo de datos y visualización; su lectura correcta exige distinguir dato crudo, dato normalizado, estado gráfico, caché transitoria y persistencia oficial.
+ * La regla de mantenimiento es conservar fronteras semánticas: leer no es aceptar, aceptar no es publicar, publicar no es renderizar, y renderizar no debe retroalimentar la verdad persistida.
+ * Cuando el flujo toque importación, el resultado estable debe terminar en IXIPTLAH mensual centralizado; cualquier archivo auxiliar debe considerarse caché, bitácora o staging, nunca fuente canónica paralela.
+ * Los comentarios aquí no sustituyen validación en tiempo de ejecución: documentan por qué la estructura cercana no debe simplificarse eliminando controles de tamaño, esquema, fecha, tipo, índice o atomicidad.
+ * Al refactorizar, preservar la capacidad de degradar localmente, reportar causa, continuar con datos sanos y no contaminar otros núcleos internos del mes.
+ */
+            VALUE "ProductVersion", "1.0.0"
+        END
+    END
+/*
+ * Frontera de E/S: el acceso siguiente cruza desde memoria controlada hacia sistema de archivos, red, proceso externo o recurso empacado; por eso debe tolerar rutas ausentes y fallas parciales.
+ * La lectura no debe asumir atomicidad perfecta ni codificación homogénea; las fuentes oficiales y cachés locales pueden estar truncadas, duplicadas o temporalmente bloqueadas.
+ * En el recurso nativo de Windows que incrusta iconografía y metadatos sin participar en la lógica de ejecución, reportar degradación sin corromper el estado persistente es más importante que fallar tarde con datos aparentemente válidos.
+ */
+    BLOCK "VarFileInfo"
+    BEGIN
+/*
+ * Semántica espacial: el fragmento siguiente opera con coordenadas, teselas, escalas o proyecciones; aquí no son equivalentes longitud/latitud, metros, píxeles y coordenadas normalizadas.
+ * La precisión visual depende de mantener separados centro cartográfico, zoom interactivo, nivel de detalle de tesela y límites geográficos autoritativos.
+ * Cualquier simplificación geométrica debe validarse contra navegación extrema para no producir saltos, cierres incompletos de perímetro o desalineación de capas.
+ */
+        VALUE "Translation", 0x409, 1200
+    END
+END

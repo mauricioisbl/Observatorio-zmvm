@@ -1,0 +1,31 @@
+﻿{
+    "workspace":  "E:\\CDMX_EpiAtmos_Observatory",
+    "build_dir":  "C:\\ProgramData\\CDMX_EpiAtmos_Observatory\\build\\cmake-release",
+    "executable":  "E:\\Biblioteca\\.Materias\\Investigaciones\\Observatorio Computacional de Epidemiología y Atmósfera Urbana en la Ciudad de México\\CDMX_EpiAtmos_Observatory.exe",
+    "log":  "C:\\ProgramData\\CDMX_EpiAtmos_Observatory\\install_logs\\instalar_todo_20260511_211426.log",
+    "tesseract":  "C:\\Program Files\\Tesseract-OCR\\tesseract.exe",
+    "python":  "C:\\Program Files\\Python314\\python.exe",
+    "cmake":  "C:\\Program Files\\CMake\\bin\\cmake.exe",
+    "ninja":  "C:\\Users\\mauri\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Ninja-build.Ninja_Microsoft.Winget.Source_8wekyb3d8bbwe\\ninja.exe",
+    "msbuild":  "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+    "vs_installation":  "C:\\Program Files\\Microsoft Visual Studio\\18\\Community",
+    "vcvarsall":  "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Auxiliary\\Build\\vcvarsall.bat",
+    "cl":  "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe",
+    "geojson":  "E:\\CDMX_EpiAtmos_Observatory\\02_Config\\geo\\zmvm.geojson",
+    "imgui":  "E:\\CDMX_EpiAtmos_Observatory\\05_Dependencias\\imgui",
+    "glfw":  "E:\\CDMX_EpiAtmos_Observatory\\05_Dependencias\\glfw",
+    "libxlsxwriter":  "E:\\CDMX_EpiAtmos_Observatory\\05_Dependencias\\libxlsxwriter",
+    "warnings":  [
+                     "Winget omitido para Git.Git",
+                     "Winget omitido para Kitware.CMake",
+                     "Winget omitido para Ninja-build.Ninja"
+                 ],
+    "failures":  [
+
+                 ],
+    "generated_local":  "2026-05-25T21:14:00",
+    "dependencies_dir":  "C:\\ProgramData\\Tlalpowa\\Dependencias",
+    "pdftotext":  "C:\\ProgramData\\Tlalpowa\\Dependencias\\poppler\\Library\\bin\\pdftotext.exe",
+    "pdftoppm":  "C:\\ProgramData\\Tlalpowa\\Dependencias\\poppler\\Library\\bin\\pdftoppm.exe",
+    "pdfinfo":  "C:\\ProgramData\\Tlalpowa\\Dependencias\\poppler\\Library\\bin\\pdfinfo.exe"
+}

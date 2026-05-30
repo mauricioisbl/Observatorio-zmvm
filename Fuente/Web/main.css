@@ -1,0 +1,489 @@
+
+
+/*
+ * Hoja de estilos: main.css
+ * Papel técnico: define la maqueta visual estática de Tlalpowa generada por CMake. No representa la lógica ImGui real, pero sí conserva proporciones, cromática, paneles, pestañas y jerarquía visual suficiente para inspección rápida del producto compilado.
+ */
+:root {
+      --accent: #f10a6d;
+      --accent-soft: rgba(241, 10, 109, .16);
+      --bg: #edf4fa;
+      --panel: #f7fbff;
+      --panel-2: #eef5fb;
+      --line: #c1d0dc;
+      --text: #202b38;
+      --muted: #718190;
+      --tab: #ffffff;
+      --tab-idle: #e4eef8;
+      --shadow: rgba(51, 74, 102, .16);
+    }
+
+    * { box-sizing: border-box; }
+
+/*
+ * Selector html, body: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #f5f9fc 0%, #e9f1f8 100%);
+      color: var(--text);
+    }
+
+/*
+ * Selector body: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    body { overflow: hidden; }
+
+/*
+ * Selector .app: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .app {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 58px 1fr 74px;
+      background: var(--bg);
+    }
+
+/*
+ * Selector .toolbar: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 12px 0 10px;
+      background: linear-gradient(180deg, #f0f7fc 0%, #fbfdff 100%);
+      border-bottom: 1px solid rgba(150, 171, 191, .72);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .78) inset;
+    }
+
+/*
+ * Selector .tabs: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .tabs {
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      min-width: 0;
+      flex: 1;
+      height: 100%;
+    }
+
+/*
+ * Selector .tab: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .tab {
+      position: relative;
+      height: 42px;
+      min-width: 98px;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(160, 182, 203, .76);
+      border-bottom-color: rgba(160, 182, 203, .35);
+      border-radius: 13px 13px 0 0;
+      background: var(--tab-idle);
+      color: #526172;
+      font-size: 13px;
+      white-space: nowrap;
+      box-shadow: 0 2px 5px var(--shadow);
+    }
+
+/*
+ * Selector .tab.active: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .tab.active {
+      background: var(--tab);
+      color: #1f2a37;
+      border-color: rgba(241, 10, 109, .34);
+      border-bottom-color: #fff;
+      box-shadow: 0 3px 8px rgba(51, 74, 102, .20);
+    }
+
+/*
+ * Selector .tab.active::after: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .tab.active::after {
+      content: "";
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 0;
+      height: 1px;
+      background: rgba(241, 10, 109, .72);
+      border-radius: 1px;
+    }
+
+/*
+ * Selector .tab.add: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .tab.add {
+      min-width: 30px;
+      width: 30px;
+      height: 29px;
+      margin-bottom: 7px;
+      padding: 0;
+      border-radius: 999px;
+      font-size: 24px;
+      line-height: 1;
+      color: #586a7b;
+    }
+
+/*
+ * Selector .commands: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .commands {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-bottom: 9px;
+      flex: 0 0 auto;
+    }
+
+/*
+ * Selector .command: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .command {
+      min-width: 98px;
+      height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: #e9f0f6;
+      border: 1px solid rgba(174, 190, 207, .46);
+      color: #2d3a48;
+      font-size: 13px;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .82) inset;
+    }
+
+/*
+ * Selector .command.primary: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .command.primary {
+      background: var(--accent);
+      border-color: rgba(197, 0, 86, .58);
+      color: white;
+      font-weight: 600;
+      box-shadow: 0 8px 18px rgba(241, 10, 109, .22);
+    }
+
+/*
+ * Selector .workspace: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .workspace {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 374px;
+    }
+
+/*
+ * Selector .map: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .map {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 54% 45%, rgba(221, 206, 164, .55) 0 5%, transparent 6%),
+        radial-gradient(circle at 44% 53%, rgba(64, 89, 71, .52) 0 9%, transparent 10%),
+        radial-gradient(circle at 72% 28%, rgba(62, 96, 67, .55) 0 16%, transparent 18%),
+        radial-gradient(circle at 22% 80%, rgba(57, 94, 63, .48) 0 13%, transparent 14%),
+        radial-gradient(circle at 12% 20%, rgba(91, 107, 75, .45) 0 8%, transparent 9%),
+        linear-gradient(135deg, #b69b75 0%, #8f8a66 22%, #c1a376 45%, #667c61 72%, #a9906c 100%);
+      border-right: 1px solid rgba(117, 137, 155, .55);
+    }
+
+/*
+ * Selector .map::before: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .map::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .32;
+      background-image:
+        linear-gradient(18deg, transparent 0 47%, rgba(21, 47, 64, .58) 48% 49%, transparent 50%),
+        linear-gradient(87deg, transparent 0 48%, rgba(21, 47, 64, .42) 49% 50%, transparent 51%),
+        linear-gradient(144deg, transparent 0 48%, rgba(21, 47, 64, .30) 49% 50%, transparent 51%);
+      background-size: 110px 160px, 172px 132px, 210px 174px;
+      mix-blend-mode: multiply;
+    }
+
+/*
+ * Selector .metro-outline: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .metro-outline {
+      position: absolute;
+      left: 45%;
+      top: 42%;
+      width: 280px;
+      height: 222px;
+      transform: translate(-50%, -50%) rotate(-9deg);
+      border: 2px solid rgba(15, 53, 75, .74);
+      clip-path: polygon(45% 0, 66% 11%, 83% 28%, 100% 47%, 86% 72%, 64% 86%, 46% 100%, 24% 86%, 0 64%, 8% 38%, 28% 18%);
+      box-shadow: 0 0 0 1px rgba(255, 255, 255, .16) inset, 0 12px 40px rgba(0, 0, 0, .10);
+    }
+
+    .metro-outline::before,
+/*
+ * Selector .metro-outline::after: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .metro-outline::after {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(15, 53, 75, .54);
+      clip-path: polygon(45% 0, 66% 11%, 83% 28%, 100% 47%, 86% 72%, 64% 86%, 46% 100%, 24% 86%, 0 64%, 8% 38%, 28% 18%);
+    }
+
+/*
+ * Selector .metro-outline::after: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .metro-outline::after {
+      inset: 48px;
+      border-color: rgba(241, 10, 109, .72);
+    }
+
+/*
+ * Selector .scale: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .scale {
+      position: absolute;
+      left: 16px;
+      bottom: 22px;
+      width: 94px;
+      height: 26px;
+      color: #22303d;
+      font-size: 12px;
+      background: rgba(245, 249, 252, .78);
+      border-radius: 6px;
+      padding: 4px 8px;
+    }
+
+/*
+ * Selector .scale::after: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .scale::after {
+      content: "";
+      position: absolute;
+      left: 9px;
+      right: 9px;
+      bottom: 5px;
+      border-bottom: 2px solid #21303d;
+      border-left: 2px solid #21303d;
+      border-right: 2px solid #21303d;
+      height: 6px;
+    }
+
+/*
+ * Selector .side: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .side {
+      min-width: 0;
+      background: linear-gradient(180deg, #f8fbfe 0%, #f1f6fa 100%);
+      padding: 14px 13px;
+      overflow: hidden;
+    }
+
+/*
+ * Selector .side small: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .side small {
+      color: var(--muted);
+      display: block;
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
+
+/*
+ * Selector .status: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .status {
+      margin-bottom: 12px;
+      font-size: 13px;
+      color: #2c3948;
+    }
+
+/*
+ * Selector .search: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .search {
+      height: 30px;
+      border-radius: 8px;
+      background: #e7edf3;
+      color: #7a8896;
+      display: flex;
+      align-items: center;
+      padding: 0 12px;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+
+/*
+ * Selector .group: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .group {
+      padding: 7px 4px 4px;
+      border-top: 1px solid rgba(186, 202, 215, .58);
+      font-size: 13px;
+    }
+
+/*
+ * Selector .group-title: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .group-title {
+      display: flex;
+      justify-content: space-between;
+      color: #1f2b38;
+      margin-bottom: 6px;
+    }
+
+/*
+ * Selector .group-title span:last-child: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .group-title span:last-child { color: var(--accent); }
+
+/*
+ * Selector .layer: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .layer {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 24px;
+      color: #465466;
+      padding-left: 18px;
+      white-space: nowrap;
+    }
+
+/*
+ * Selector .box: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .box {
+      width: 15px;
+      height: 15px;
+      border: 1px solid rgba(95, 76, 144, .75);
+      border-radius: 4px;
+      background: rgba(149, 122, 212, .30);
+      flex: 0 0 auto;
+    }
+
+/*
+ * Selector .timeline: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .timeline {
+      position: relative;
+      background: linear-gradient(180deg, #f9fcff 0%, #edf4f9 100%);
+      border-top: 1px solid rgba(164, 181, 198, .68);
+      padding: 12px 18px 0;
+    }
+
+/*
+ * Selector .timeline-center: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .timeline-center {
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      transform: translateX(-50%);
+      min-width: 365px;
+      height: 27px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e8eef4;
+      border-radius: 9px;
+      color: #2a3440;
+      font-size: 13px;
+    }
+
+/*
+ * Selector .ticks: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .ticks {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 22px;
+      height: 22px;
+      background: repeating-linear-gradient(90deg, rgba(111, 129, 146, .78) 0 1px, transparent 1px 35px);
+      border-bottom: 6px solid #d7e2eb;
+      border-radius: 2px;
+    }
+
+/*
+ * Selector .marker: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .marker {
+      position: absolute;
+      bottom: 16px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px var(--accent-soft);
+    }
+
+/*
+ * Selector .marker.one: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .marker.one { left: 49.5%; }
+/*
+ * Selector .marker.two: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .marker.two { left: 18.4%; width: 7px; height: 32px; border-radius: 4px; bottom: 12px; }
+
+    .year-a,
+    .year-b,
+/*
+ * Selector .year-c: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .year-c {
+      position: absolute;
+      bottom: 3px;
+      color: var(--accent);
+      font-size: 12px;
+    }
+
+/*
+ * Selector .year-a: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .year-a { left: 18.1%; }
+/*
+ * Selector .year-b: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .year-b { left: 49.1%; }
+/*
+ * Selector .year-c: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .year-c { left: 0; color: #8a99a8; }
+
+/*
+ * Selector .note: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+    .note {
+      position: absolute;
+      right: 16px;
+      bottom: 4px;
+      color: #8998a7;
+      font-size: 11px;
+    }
+
+/*
+ * Selector .layer.on .box: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+.layer.on .box {
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+/*
+ * Selector .layer.on: regla visual aislada para mantener estable la composición del facsímil sin depender de estilos embebidos en HTML.
+ */
+.layer.on {
+  color: var(--text);
+}

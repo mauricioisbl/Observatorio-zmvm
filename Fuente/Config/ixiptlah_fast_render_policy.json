@@ -1,0 +1,28 @@
+{
+  "version": "2026-05-25.1",
+  "format": "IXIPTLAH v2 with AtmosphereRenderSummary records",
+  "goal": "Mantener el dato oficial descargado como fuente cruda y generar bloques binarios de render que el mapa pueda leer sin parsear millones de mediciones horarias.",
+  "records": {
+    "AtmosphereRenderSummary": {
+      "record_type_id": 12,
+      "schema": 1,
+      "payload_order": [
+        "pollutant", "station_id", "station", "unit", "date", "hour", "year",
+        "lon", "lat", "alt", "mean", "min", "max", "count"
+      ],
+      "use": "Carga inmediata de halos y pines atmosfericos en el mapa"
+    },
+    "AtmosphereMeasurement": {
+      "record_type_id": 10,
+      "schema": 1,
+      "default_write": false,
+      "enable_with": "TLALPOWA_ATMOS_RAW_IXIPTLAH=1",
+      "use": "Persistencia cruda opcional para auditoria o analisis externo; no se carga al mapa por defecto"
+    }
+  },
+  "runtime": {
+    "map_point_limit_env": "TLALPOWA_ATMOS_MAP_POINT_LIMIT",
+    "raw_to_map_env": "TLALPOWA_ATMOS_RAW_IXIPTLAH_TO_MAP",
+    "selected_record_reader": "ixiptlah_read_selected_records salta payloads de tipos no requeridos con seekg, evitando parseo innecesario"
+  }
+}

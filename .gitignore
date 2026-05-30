@@ -1,0 +1,33 @@
+# Tlalpohua: reglas de publicacion para no contaminar GitHub con artefactos locales.
+# La publicacion copia un manifiesto operativo, pero estas reglas blindan commits
+# manuales posteriores y reducen el riesgo de subir caches, compilaciones o estados.
+Build/
+Build*/
+_deps/
+.cache/
+cache/
+cache_mapa/
+*.obj
+*.o
+*.pdb
+*.ilk
+*.ipdb
+*.iobj
+*.tmp
+*.temp
+*.log
+*.bak
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.xz
+tlalpowa_estado_usuario.json
+rutas_directorio.txt
+*.user
+*.suo
+.vs/
+.vscode/.ropeproject/
+.DS_Store
+Thumbs.db
